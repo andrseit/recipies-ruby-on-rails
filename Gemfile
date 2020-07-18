@@ -38,7 +38,7 @@ gem 'bootstrap'
 
 gem 'jquery-rails'
 
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
