@@ -38,6 +38,8 @@ gem 'bootstrap', '~> 4.5.0'
 
 gem 'jquery-rails'
 
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
