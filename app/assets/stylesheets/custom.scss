@@ -1,3 +1,18 @@
+.listing {
+	list-style: none;
+	padding-left: 0;
+}
+
+.chef-title {
+	color: #2b2b2b;
+	font-weight: bold;
+	font-size: 18px;
+
+	a {
+		color: #2b2b2b;
+	}
+}
+
 .recipe-actions {
 	padding-top: 5px; 
 	a {
