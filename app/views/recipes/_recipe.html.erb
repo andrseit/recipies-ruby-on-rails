@@ -12,7 +12,9 @@
 				<p>Ingredients: <%= render recipe.ingredients %></p>
 			<% end %>
 			<p>
-				<span class="quiet"><small>Created <%= time_ago_in_words(recipe.created_at)%> ago by <%= link_to recipe.chef.chefname, chef_path(recipe.chef)%></small></span>
+				<span class="quiet"><small>Created <%= time_ago_in_words(recipe.created_at)%> ago by <%= link_to recipe.chef.chefname, chef_path(recipe.chef)%>
+					| <%= pluralize(recipe.comments.count, "comment") %>
+				</small></span>
 			</p>
 			<% if logged_in? && (current_chef == recipe.chef || current_chef.admin?) %>
 				<div class="recipe-actions">
